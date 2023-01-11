@@ -2,7 +2,7 @@
 C - Binary trees
 ![img](https://miro.medium.com/max/1200/1*CMGFtehu01ZEBgzHG71sMg.png)
 
-This is a collaboration project between two students at [Holberton School](https://www.holbertonschool.com) from cohort #19.
+This is a collaboration project between two students @MathieuMorel62 and @rayaneRX at [Holberton School](https://www.holbertonschool.com) from cohort #19.
 
 ## Resources
 ### Read or Watch:
