@@ -1,10 +1,10 @@
 # C - Binary trees
 ![img](https://miro.medium.com/max/1200/1*CMGFtehu01ZEBgzHG71sMg.png)
 
-This is a collaboration project between two students [Mathieu Morel](https://github.com/MathieuMorel62) and [Rayane El Kefif](https://github.com/rayaneRX) at [Holberton School](https://www.holbertonschool.com) from cohort #19 Lille FRANCE.
+This is a collaboration project between two students [Mathieu Morel](https://github.com/MathieuMorel62) and [Rayane El Kefif](https://github.com/rayaneRX) at [Holberton School](https://www.holbertonschool.com) from cohort #19 Lille FRANCE 🇫🇷.
 
 ## Description
-Binary Trees are data structures used to store and organize data hierarchically, each node having a left and right child pointer. Different types like Binary Search Tree and Decision Trees exist with various uses. Common operations include insertion, deletion, search and traversals like in-order, pre-order and post-order. Careful implementation choice considering pros and cons is essential.
+>Binary Trees are data structures used to store and organize data hierarchically, each node having a left and right child pointer. Different types like Binary Search Tree and Decision Trees exist with various uses. Common operations include insertion, deletion, search and traversals like in-order, pre-order and post-order. Careful implementation choice considering pros and cons is essential.
 
 ## Resources
 ### Read or Watch:
@@ -17,34 +17,34 @@ Binary Trees are data structures used to store and organize data hierarchically,
 
 ## General
 
-#### What is a binary tree:
+#### [What Is a Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
 
 A binary tree in C is a data structure used for storing data in a hierarchical manner where each node contains two pointers: 
 - one to the `left child`
 - one to the `right child`
 
-#### What is the difference between a binary tree and a Binary Search Tree:
+#### [What Is The Difference Between a Binary Tree And a Binary Search Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
 
 A `binary search tree` (BST) has an order property where nodes on the left of a particular node have a value less than it, and nodes on the right have a value greater than it. Where as a `binary tree` doesn't have this order property.
 
-#### What is the possible gain in terms of time complexity compared to linked lists:
+#### [What Is The Possible Gain In Terms Of Time Complexity Compared To Linked Lists:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
 
 Binary trees have a time complexity gain compared to linked lists as operations can be performed in `O(log n)` instead of `O(n)`.
 
-#### What are the depth, the height, the size of a binary tree:
+#### [What Are The Depth, The Height, The Size Of a Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
 
 - The `depth` is the distance of a node from the root
 - The `height` is the distance of a node to the farthest leaf
 - The `size` is the total number of nodes.
 
-#### What are the different traversal methods to go through a binary tree:
+#### [What Are The Different Traversal Methods To Go Through a Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
 
 The commonly used traversal methods for going through a binary tree are: 
 - `in-order`: visits the left subtree first, then the root node, and finally the right subtree.
 - `pre-order`: visits the root node first, then the left subtree, and finally the right subtree.
 - `post-order`: visits the left subtree first, then the right subtree and finally the root node.
 
-#### What is a complete, a full, a perfect, a balanced binary tree:
+#### [What Is a Complete, Full, Perfect, Balanced Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
 
   - A `complete binary tree` is a tree where all levels are filled except possibly the last one. 
   - A `full binary tree` is a tree where all internal nodes have exactly two children and leaves are at the same level.
