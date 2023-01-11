@@ -17,34 +17,34 @@ This is a collaboration project between two students [Mathieu Morel](https://git
 
 ## General
 
-#### [What Is a Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
+#### [What Is a Binary Tree:](https://en.wikipedia.org/wiki/Binary_tree)
 
 A binary tree in C is a data structure used for storing data in a hierarchical manner where each node contains two pointers: 
 - one to the `left child`
 - one to the `right child`
 
-#### [What Is The Difference Between a Binary Tree And a Binary Search Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
+#### [What Is The Difference Between a Binary Tree And a Binary Search Tree:](https://www.geeksforgeeks.org/difference-between-binary-tree-and-binary-search-tree/)
 
 A `binary search tree` (BST) has an order property where nodes on the left of a particular node have a value less than it, and nodes on the right have a value greater than it. Where as a `binary tree` doesn't have this order property.
 
-#### [What Is The Possible Gain In Terms Of Time Complexity Compared To Linked Lists:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
+#### [What Is The Possible Gain In Terms Of Time Complexity Compared To Linked Lists:](https://www.geeksforgeeks.org/time-complexities-of-different-data-structures/)
 
 Binary trees have a time complexity gain compared to linked lists as operations can be performed in `O(log n)` instead of `O(n)`.
 
-#### [What Are The Depth, The Height, The Size Of a Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
+#### [What Are The Depth, The Height, The Size Of a Binary Tree:](https://www.geeksforgeeks.org/height-and-depth-of-a-node-in-a-binary-tree)
 
 - The `depth` is the distance of a node from the root
 - The `height` is the distance of a node to the farthest leaf
 - The `size` is the total number of nodes.
 
-#### [What Are The Different Traversal Methods To Go Through a Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
+#### [What Are The Different Traversal Methods To Go Through a Binary Tree:](https://www.freecodecamp.org/news/binary-search-tree-traversal-inorder-preorder-post-order-for-bst)
 
 The commonly used traversal methods for going through a binary tree are: 
 - `in-order`: visits the left subtree first, then the root node, and finally the right subtree.
 - `pre-order`: visits the root node first, then the left subtree, and finally the right subtree.
 - `post-order`: visits the left subtree first, then the right subtree and finally the root node.
 
-#### [What Is a Complete, Full, Perfect, Balanced Binary Tree:](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/README.md)
+#### [What Is a Complete, Full, Perfect, Balanced Binary Tree:](https://www.geeksforgeeks.org/types-of-binary-tree/)
 
   - A `complete binary tree` is a tree where all levels are filled except possibly the last one. 
   - A `full binary tree` is a tree where all internal nodes have exactly two children and leaves are at the same level.
