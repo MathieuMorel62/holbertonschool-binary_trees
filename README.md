@@ -1,5 +1,4 @@
-# holbertonschool-binary_trees
-C - Binary trees
+# C - Binary trees
 ![img](https://miro.medium.com/max/1200/1*CMGFtehu01ZEBgzHG71sMg.png)
 
 This is a collaboration project between two students [Mathieu Morel](https://github.com/MathieuMorel62) and [Rayane El Kefif](https://github.com/rayaneRX) at [Holberton School](https://www.holbertonschool.com) from cohort #19.
