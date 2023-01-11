@@ -1,7 +1,7 @@
 # C - Binary trees
 ![img](https://miro.medium.com/max/1200/1*CMGFtehu01ZEBgzHG71sMg.png)
 
-This is a collaboration project between two students [Mathieu Morel](https://github.com/MathieuMorel62) and [Rayane El Kefif](https://github.com/rayaneRX) at [Holberton School](https://www.holbertonschool.com) from cohort #19 Lille.
+This is a collaboration project between two students [Mathieu Morel](https://github.com/MathieuMorel62) and [Rayane El Kefif](https://github.com/rayaneRX) at [Holberton School](https://www.holbertonschool.com) from cohort #19 Lille FRANCE.
 
 ## Description
 Binary Trees are data structures used to store and organize data hierarchically, each node having a left and right child pointer. Different types like Binary Search Tree and Decision Trees exist with various uses. Common operations include insertion, deletion, search and traversals like in-order, pre-order and post-order. Careful implementation choice considering pros and cons is essential.
