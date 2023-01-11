@@ -2,7 +2,7 @@
 C - Binary trees
 ![img](https://miro.medium.com/max/1200/1*CMGFtehu01ZEBgzHG71sMg.png)
 
-This is a collaboration project between two students @MathieuMorel62 and @rayaneRX at [Holberton School](https://www.holbertonschool.com) from cohort #19.
+This is a collaboration project between two students [Mathieu Morel](https://github.com/MathieuMorel62) and [Rayane El Kefif](https://github.com/rayaneRX) at [Holberton School](https://www.holbertonschool.com) from cohort #19.
 
 ## Resources
 ### Read or Watch:
@@ -1245,5 +1245,5 @@ Uncle of 12: (nil)
 
 ## Authors
 
-- Mathieu Morel @MathieuMorel62
-- Rayane El Kefif @rayaneRX
+- Mathieu Morel [@MathieuMorel62](https://github.com/MathieuMorel62)
+- Rayane El Kefif [@rayaneRX](https://github.com/rayaneRX)
