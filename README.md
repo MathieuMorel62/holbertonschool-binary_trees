@@ -1216,7 +1216,7 @@ Sibling of 98: (nil)
 
 ---------------------------
 
-#### [18. Uncle]()
+#### [18. Uncle](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/18-binary_tree_uncle.c)
 Write a function that finds the uncle of a node
 
 - Prototype: `binary_tree_t *binary_tree_uncle(binary_tree_t *node)`;
