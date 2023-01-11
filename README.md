@@ -3,14 +3,53 @@
 
 This is a collaboration project between two students [Mathieu Morel](https://github.com/MathieuMorel62) and [Rayane El Kefif](https://github.com/rayaneRX) at [Holberton School](https://www.holbertonschool.com) from cohort #19 Lille.
 
+## Description
+Binary Trees are data structures used to store and organize data hierarchically, each node having a left and right child pointer. Different types like Binary Search Tree and Decision Trees exist with various uses. Common operations include insertion, deletion, search and traversals like in-order, pre-order and post-order. Careful implementation choice considering pros and cons is essential.
+
 ## Resources
 ### Read or Watch:
 
-- [Binary Tree](https://en.wikipedia.org/wiki/Binary_tree) (note the first line: `Not to be confused with B-tree.`)
+- [Binary Tree](https://en.wikipedia.org/wiki/Binary_tree) (note the first line: **Not to be confused with B-tree.**)
 - [Data Structure And Algorithms - Tree](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
 - [Tree Traversal](https://www.tutorialspoint.com/data_structures_algorithms/tree_traversal.htm)
 - [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)
 - [Data structures: Binary Tree](https://www.youtube.com/watch?v=H5JubkIy_p8)
+
+## General
+
+#### What is a binary tree:
+
+A binary tree in C is a data structure used for storing data in a hierarchical manner where each node contains two pointers: 
+- one to the `left child`
+- one to the `right child`
+
+#### What is the difference between a binary tree and a Binary Search Tree:
+
+A `binary search tree` (BST) has an order property where nodes on the left of a particular node have a value less than it, and nodes on the right have a value greater than it. Where as a `binary tree` doesn't have this order property.
+
+#### What is the possible gain in terms of time complexity compared to linked lists:
+
+Binary trees have a time complexity gain compared to linked lists as operations can be performed in `O(log n)` instead of `O(n)`.
+
+#### What are the depth, the height, the size of a binary tree:
+
+- The `depth` is the distance of a node from the root
+- The `height` is the distance of a node to the farthest leaf
+- The `size` is the total number of nodes.
+
+#### What are the different traversal methods to go through a binary tree:
+
+The commonly used traversal methods for going through a binary tree are: 
+- `in-order`: visits the left subtree first, then the root node, and finally the right subtree.
+- `pre-order`: visits the root node first, then the left subtree, and finally the right subtree.
+- `post-order`: visits the left subtree first, then the right subtree and finally the root node.
+
+#### What is a complete, a full, a perfect, a balanced binary tree:
+
+  - A `complete binary tree` is a tree where all levels are filled except possibly the last one. 
+  - A `full binary tree` is a tree where all internal nodes have exactly two children and leaves are at the same level.
+  - A `perfect binary tree` is a full and complete binary tree 
+  - A `balanced binary tree` is a tree where the difference in height between the left and right subtrees is less than a certain threshold.
 
 ## Requirements
 
