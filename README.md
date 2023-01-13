@@ -1530,6 +1530,140 @@ Is 98 complete: 0
 </details>
 
 ----------------------------------
+
+#### [22. Rotate Left](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/103-binary_tree_rotate_left.c)
+Write a function that performs a left-rotation on a binary tree
+
+- Prototype: `binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)`;
+- Where `tree` is a pointer to the root node of the tree to rotate
+- Your function must return a pointer to the new root node of the tree once rotated
+
+<details>
+<summary>File Compilation / Test</summary>
+<br>
+
+```c++
+mathieu@/tmp/binary_trees$ cat 103-main.c
+  
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    binary_tree_t *root;
+
+    root = binary_tree_node(NULL, 98);
+    root->right = binary_tree_node(root, 128);
+    root->right->right = binary_tree_node(root->right, 402);
+    binary_tree_print(root);
+    printf("Rotate-left %d\n", root->n);
+    root = binary_tree_rotate_left(root);
+    binary_tree_print(root);
+    printf("\n");
+
+    root->right->right = binary_tree_node(root->right, 450);
+    root->right->left = binary_tree_node(root->right, 420);
+    binary_tree_print(root);
+    printf("Rotate-left %d\n", root->n);
+    root = binary_tree_rotate_left(root);
+    binary_tree_print(root);
+    return (0);
+}
+  
+mathieu@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 103-binary_tree_rotate_left.c 103-main.c 0-binary_tree_node.c -o 103-rotl
+  
+mathieu@/tmp/binary_trees$ ./103-rotl
+(098)--.
+     (128)--.
+          (402)
+Rotate-left 98
+  .--(128)--.
+(098)     (402)
+
+  .--(128)-------.
+(098)       .--(402)--.
+          (420)     (450)
+Rotate-left 128
+       .-------(402)--.
+  .--(128)--.       (450)
+(098)     (420)
+```
+</details>
+
+-----------------------------------
+
+#### [23. Rotate Right](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/104-binary_tree_rotate_right.c)
+Write a function that performs a right-rotation on a binary tree
+
+- Prototype: `binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)`;
+- Where `tree` is a pointer to the root node of the tree to rotate
+- Your function must return a pointer to the new root node of the tree once rotated
+
+<details>
+<summary>File Compilation / Test</summary>
+<br>
+
+```c++
+mathieu@/tmp/binary_trees$ cat 104-main.c
+  
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    binary_tree_t *root;
+
+    root = binary_tree_node(NULL, 98);
+    root->left = binary_tree_node(root, 64);
+    root->left->left = binary_tree_node(root->left, 32);
+    binary_tree_print(root);
+    printf("Rotate-right %d\n", root->n);
+    root = binary_tree_rotate_right(root);
+    binary_tree_print(root);
+    printf("\n");
+
+    root->left->left = binary_tree_node(root->left, 20);
+    root->left->right = binary_tree_node(root->left, 56);
+    binary_tree_print(root);
+    printf("Rotate-right %d\n", root->n);
+    root = binary_tree_rotate_right(root);
+    binary_tree_print(root);
+    return (0);
+}
+  
+mathieu@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 104-binary_tree_rotate_right.c 104-main.c 0-binary_tree_node.c -o 104-rotr
+
+mathieu@/tmp/binary_trees$ ./104-rotr
+       .--(098)
+  .--(064)
+(032)
+Rotate-right 98
+  .--(064)--.
+(032)     (098)
+
+       .-------(064)--.
+  .--(032)--.       (098)
+(020)     (056)
+Rotate-right 64
+  .--(032)-------.
+(020)       .--(064)--.
+          (056)     (098)
+```
+</details>
+  
+------------------------------------
   
 ## Authors
 
