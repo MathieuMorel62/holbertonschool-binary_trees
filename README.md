@@ -1738,6 +1738,83 @@ Is 98 bst: 0
   
 --------------------------------
 
+#### [25. BST - Insert](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/111-bst_insert.c)
+Write a function that inserts a value in a Binary Search Tree
+
+- Prototype: `bst_t *bst_insert(bst_t **tree, int value)`;
+- Where `tree` is a double pointer to the root node of the BST to insert the value
+- And `value` is the value to store in the node to be inserted
+- Your function must return a pointer to the created node, or `NULL` on failure
+- If the address stored in `tree` is `NULL`, the created node must become the root node.
+- If the value is already present in the tree, it must be ignored
+  
+Your file `0-binary_tree_node.c` will be compile during the correction
+  
+<details>
+<summary>File Compilation / Test</summary>
+<br>
+
+```c++
+mathieu@/tmp/binary_trees$ cat 111-main.c
+  
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    bst_t *root;
+    bst_t *node;
+
+    root = NULL;
+    node = bst_insert(&root, 98);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 402);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 12);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 46);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 128);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 256);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 512);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 1);
+    printf("Inserted: %d\n", node->n);
+    node = bst_insert(&root, 128);
+    printf("Node should be nil -> %p\n", (void *)node);
+    binary_tree_print(root);
+    return (0);
+}
+  
+mathieu@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 111-bst_insert.c 111-main.c 0-binary_tree_node.c -o 111-bst_insert
+  
+mathieu@/tmp/binary_trees$ ./111-bst_insert
+Inserted: 98
+Inserted: 402
+Inserted: 12
+Inserted: 46
+Inserted: 128
+Inserted: 256
+Inserted: 512
+Inserted: 1
+Node should be nil -> (nil)
+       .-------(098)------------.
+  .--(012)--.         .-------(402)--.
+(001)     (046)     (128)--.       (512)
+                         (256)
+```
+</details>
+  
+-------------------------------------
+  
 ## Authors
 
 - Mathieu Morel [@MathieuMorel62](https://github.com/MathieuMorel62)
