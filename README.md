@@ -2032,6 +2032,15 @@ Removed 68...
 </details>
 
 ----------------------------
+
+#### [29. Big O #BST](https://github.com/MathieuMorel62/holbertonschool-binary_trees/blob/main/115-O)
+What are the average time complexities of those operations on a Binary Search Tree (one answer per line):
+
+- Inserting the value `n`
+- Removing the node with the value `n`
+- Searching for a node in a BST of size n
+  
+-----------------------------
   
 ## Authors
 
