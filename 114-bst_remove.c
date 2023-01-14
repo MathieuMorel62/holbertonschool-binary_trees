@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * min_value_node - function that finds the node with the minimum value in a BST
+ * min_value_node - that finds the node with the minimum value in a BST
  * @root: pointer to the root node of the tree
  *
  * Return: pointer to the node with the minimum value
