@@ -1,13 +1,13 @@
 #include "binary_trees.h"
 
 /**
- * minValueNode - function that finds the node with the minimum value in a BST
+ * min_value_node - function that finds the node with the minimum value in a BST
  * @root: pointer to the root node of the tree
  *
  * Return: pointer to the node with the minimum value
  */
 
-bst_t *minValueNode(bst_t *root)
+bst_t *min_value_node(bst_t *root)
 {
 	bst_t *current = root;
 
@@ -27,36 +27,44 @@ bst_t *minValueNode(bst_t *root)
 
 bst_t *bst_remove(bst_t *root, int value)
 {
-	bst_t *temp;
+	bst_t *temp, *parent;
 
 	if (root == NULL)
 		return (root);
 
-	if (value < root->n)
+	else if (value < root->n)
 		root->left = bst_remove(root->left, value);
 	else if (value > root->n)
 		root->right = bst_remove(root->right, value);
 	else
 	{
-		if (root->left == NULL)
+		if (root->left == NULL && root->right == NULL)
 		{
-			temp = root->right;
-
 			free(root);
-			return (temp);
+			root = NULL;
+		}
+		else if (root->left == NULL)
+		{
+			temp = root;
+			parent = root->parent;
+			root = root->right;
+			root->parent = parent;
+			free(temp);
 		}
 		else if (root->right == NULL)
 		{
-			temp = root->left;
-
-			free(root);
-			return (temp);
+			temp = root;
+			parent = root->parent;
+			root = root->left;
+			root->parent = parent;
+			free(temp);
 		}
-		temp = minValueNode(root->right);
-
-		temp->parent = root->parent;
-		root->n = temp->n;
-		root->right = bst_remove(root->right, temp->n);
+		else
+		{
+			temp = min_value_node(root->right);
+			root->n = temp->n;
+			root->right = bst_remove(root->right, temp->n);
+		}
 	}
 	return (root);
 }
