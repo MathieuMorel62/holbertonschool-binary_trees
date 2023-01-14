@@ -1,9 +1,8 @@
 #include "binary_trees.h"
 
 /**
- * minValueNode - function that finds the node with the minimum value
- * in a BST
- * @node: pointer to the root node of the tree
+ * minValueNode - function that finds the node with the minimum value in a BST
+ * @root: pointer to the root node of the tree
  *
  * Return: pointer to the node with the minimum value
  */
@@ -55,6 +54,7 @@ bst_t *bst_remove(bst_t *root, int value)
 		}
 		temp = minValueNode(root->right);
 
+		temp->parent = root->parent;
 		root->n = temp->n;
 		root->right = bst_remove(root->right, temp->n);
 	}
